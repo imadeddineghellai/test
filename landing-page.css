@@ -3,6 +3,9 @@ body {
    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
    padding: 0;
 }
+.container {
+   padding: 0 2rem;
+}
 .navbar {
    display: flex;
    flex-direction: row;
@@ -76,10 +79,50 @@ input[type="text"] {
    flex-direction: column;
    align-items: center;
 }
+
+.frame-container {
+   display: flex;
+   justify-content: center;
+   margin: 2rem 0;
+}
+
+.tenor-container {
+   display: flex;
+   flex-direction: row;
+   margin-bottom: 4rem;
+}
+.tenor-container section button {
+   padding: 1rem 2rem;
+   margin-bottom: 1rem;
+   border: none;
+   background-color: gold;
+}
+
+.tenor-container section h3 {
+   margin: 4px 0;
+   font-weight: 200;
+}
+.tenor-container section {
+   flex-grow: 1;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   margin: 0 2rem;
+   border: 1px solid black;
+}
+
+.bold {
+   font-weight: bold !important;
+}
+
 @media screen and (max-width: 768px) {
    .navbar {
       flex-direction: column;
       align-items: center;
+   }
+
+   .tenor-container {
+      flex-direction: column;
    }
    .navbar ul li {
       padding: 0 2rem;
