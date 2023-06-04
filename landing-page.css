@@ -1,0 +1,87 @@
+body {
+   margin: 0;
+   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+   padding: 0;
+}
+.navbar {
+   display: flex;
+   flex-direction: row;
+   justify-content: space-between;
+}
+.navbar ul {
+   align-items: center;
+   display: flex;
+}
+.navbar ul li {
+   list-style: none;
+   padding: 1rem 1.5rem;
+}
+.navbar ul li a {
+   text-decoration: none;
+   font-size: 18px;
+
+   color: black;
+}
+.navbar ul li a:hover {
+   text-decoration: underline;
+}
+
+.header-text {
+   margin: 0 auto;
+   text-align: center;
+}
+
+.navbar img {
+   padding: 1rem;
+   /* background-color: red; */
+   height: 40px;
+}
+
+.header-text button {
+   margin: 1rem 0;
+   border: none;
+   padding: 0.5rem 2rem;
+   font-weight: bold;
+   font-size: 20px;
+   background-color: gold;
+}
+input[type="text"] {
+   padding: 0.5rem;
+   width: 200px;
+}
+.header-text button:hover {
+   background-color: goldenrod;
+   cursor: pointer;
+}
+.header-text {
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+}
+.flex {
+   display: flex;
+   align-items: center;
+}
+
+.header-section i {
+   display: inline-block;
+   padding: 0 3rem;
+   color: gold;
+}
+.header-section p {
+   max-width: 600px;
+}
+.header-section {
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+}
+@media screen and (max-width: 768px) {
+   .navbar {
+      flex-direction: column;
+      align-items: center;
+   }
+   .navbar ul li {
+      padding: 0 2rem;
+   }
+}
